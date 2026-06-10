@@ -1,7 +1,7 @@
 <?php
 
 $id = 'Base3VizionPC';
-$version = '4.2.0';
+$version = '4.3.0';
 $ilias_min_version = '10.0';
 $ilias_max_version = '12.999';
 $responsible = 'Daniel Dahme';
