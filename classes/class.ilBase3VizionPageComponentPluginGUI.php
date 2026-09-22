@@ -1,5 +1,6 @@
 <?php declare(strict_types=1);
 
+use Base3\Api\IAssetResolver;
 use Base3\Base3Ilias\PageComponent\AbstractPageComponentPluginGUI;
 use Vizion\Api\IReportDisplay;
 
@@ -33,7 +34,9 @@ class ilBase3VizionPageComponentPluginGUI extends AbstractPageComponentPluginGUI
 	protected function getPresentationHtml(array $a_properties, string $plugin_version): string {
 
 		// Include client scripts.
-		$this->tpl->addJavaScript('components/Base3/ClientStack/assetloader/assetloader.min.js');
+		$this->tpl->addJavaScript(
+			$this->dic[IAssetResolver::class]->resolve('plugin/ClientStack/assets/assetloader/assetloader.min.js')
+		);
 
 		// Read report identifier from properties.
 		$report = trim((string)($a_properties['report'] ?? ''));
