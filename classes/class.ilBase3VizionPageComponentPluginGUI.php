@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-use Base3\Api\IAssetResolver;
+use Base3\CoreFoundation\Api\IAssetResolver;
 use Base3\Base3Ilias\PageComponent\AbstractPageComponentPluginGUI;
-use Vizion\Api\IReportDisplay;
+use Base3\Vizion\Api\IReportDisplay;
 
 /**
  * @ilCtrl_isCalledBy ilBase3VizionPageComponentPluginGUI: ilPCPluggedGUI

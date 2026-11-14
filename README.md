@@ -35,6 +35,6 @@ After copying the plugin files, the plugin MUST be installed and activated in th
 
 ## BASE3 Framework Dependency
 
-This plugin is only runnable in connection with the BASE3 Framework, the BaseIlias integration, the corresponding dependent BASE3 components, and the Base3IliasAdapter UIHook plugin.
+This plugin is only runnable in connection with the BASE3 Framework, the Base3Ilias integration, the corresponding dependent BASE3 components, and the Base3IliasAdapter UIHook plugin.
 
 These dependencies MUST be installed, configured, and active before this plugin can be used productively.
